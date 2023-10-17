@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: #FFBD88;
+}
+
+body > h1{
+    background-color: rgb(210, 241, 94);
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    color: rgb(252, 0, 0);
+    box-shadow:  2px 2px 2px 5px rgb(116, 101, 101);
+}
+.container1 {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-color: azure;
+    box-shadow:  2px 2px 2px 5px rgb(116, 101, 101);
+    border-radius: 20px;
+    margin: 25px;
+    padding: 70px;
+    gap: 30px;
+}
+
+.left {
+    flex: 1;    
+}
+
+.right {
+    flex: 1;
+}
+
+.left > img {
+    width: 100%;
+    max-width: fit-content;
+    border-radius: 20px;
+    box-shadow:  2px 2px 2px 5px rgb(255, 99, 99);
+}
+
+.ingredients {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container1 {
+        display: flex;
+        flex-flow: column;
+        padding: 70px 20px;
+    }
+    p{
+        text-align: justify;
+    }
+
+    h2 {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .left {
+        padding: 10px;
+        width: 90%;
+        align-content: center;
+    }
+
+    .right {
+        padding: 10px;
+    }
+    
+}
